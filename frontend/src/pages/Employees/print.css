@@ -1,0 +1,45 @@
+.empTable {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 500;
+  height: 500;
+}
+
+table.empTable td,
+table.empTable th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+table.empTable tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+@media all {
+  .page-break {
+    display: none;
+  }
+}
+
+@media print {
+  html,
+  body {
+    height: initial !important;
+    overflow: initial !important;
+    -webkit-print-color-adjust: exact;
+  }
+}
+
+@media print {
+  .page-break {
+    margin-top: 1rem;
+    display: block;
+    page-break-before: auto;
+  }
+}
+
+@page {
+  size: auto;
+  margin: 20mm;
+}
